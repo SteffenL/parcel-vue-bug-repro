@@ -1,3 +1,3 @@
 <template>
-<span>B</span>
+<span>C</span>
 </template>
