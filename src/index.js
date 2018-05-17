@@ -1,7 +1,16 @@
-import Vue from 'vue';
-import App from './App.vue';
+const posthtml = require('posthtml');
 
-new Vue({
-    el: '#app',
-    render: h => h(App)
-});
+const html = `
+<span>A
+    <ComponentB />
+    <ComponentC />
+</span>
+`;
+
+const result = posthtml()
+  .process(html, {
+    sync: true,
+    //xmlMode: true
+  }).html;
+
+console.log(result);

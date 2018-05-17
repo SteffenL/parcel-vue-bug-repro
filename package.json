@@ -4,17 +4,13 @@
   "description": "testapp",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steffen",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.5.16"
-  },
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^1.2.1",
-    "vue-template-compiler": "^2.5.16"
+    "posthtml": "^0.11.2",
+    "posthtml-parser": "^0.4.0",
+    "posthtml-render": "^1.1.3"
   }
 }
